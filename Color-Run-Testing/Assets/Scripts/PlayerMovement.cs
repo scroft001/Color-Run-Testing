@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 	private Vector3 mousePosition;
 	public Rigidbody2D rb;
 	private Vector2 direction;
-	public float moveSpeed;
+	private float moveSpeed = 30f;
 
 	void Awake(){
 		rb = GetComponent<Rigidbody2D>();
