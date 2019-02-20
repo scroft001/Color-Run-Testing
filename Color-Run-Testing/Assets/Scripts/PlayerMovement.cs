@@ -8,7 +8,11 @@ public class PlayerMovement : MonoBehaviour {
 	private Vector3 mousePosition;
 	public Rigidbody2D rb;
 	private Vector2 direction;
-	public float moveSpeed = 100f;
+	private float moveSpeed = 30f;
+
+	void Awake(){
+		rb = GetComponent<Rigidbody2D>();
+	}
 
 	
 	// Update is called once per frame
